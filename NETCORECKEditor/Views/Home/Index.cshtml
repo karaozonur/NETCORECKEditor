@@ -1,0 +1,14 @@
+﻿@model NETCORECKEditor.Models.ViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@Html.TextAreaFor(m=>m._models.aciklama,new{@id="aciklama", @class="formcontrol ckeditor"})
+
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/ckeditor/ckeditor.js"></script>
+<script src="~/script/script.js"></script>
